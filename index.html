@@ -5,6 +5,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header class="navbar">
@@ -32,7 +34,7 @@
 
 <div class="hero-buttons">
     <a href="Langston Collins Resume.pdf" class="btn primary resume-btn" download>
-        Download Resume
+        Resume
     </a>
 </div>
 
@@ -301,24 +303,40 @@
 
 
 
-<section id="contact" class="content-section">
+<section id="contact" class="content-section contact-section">
+    <div class="contact-info">
+        <h2>Contact</h2>
 
-    <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:langston.collins@yahoo.com">
+                <i class="fa-solid fa-envelope"></i>
+                Email
+            </a>
 
-    <div class="contact-links">
+            <a href="https://www.linkedin.com/in/langston-collins/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+            </a>
 
-        <a href="mailto:Langston.collins123@gmail.com">Email</a>
-
-        <a href="https://www.linkedin.com/in/langston-collins/">
-            LinkedIn
-        </a>
-
-        <a href="https://github.com/Langston-C">
-            GitHub
-        </a>
-
+            <a href="https://github.com/Langston-C" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+        </div>
     </div>
 
+    <form class="contact-form" action="https://formspree.io/f/xwvjeloy" method="POST">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
 </section>
 
 <footer>
